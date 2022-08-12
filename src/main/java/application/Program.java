@@ -9,8 +9,6 @@ import javax.persistence.Persistence;
 public class Program {
     public static void main(String[] args) {
 
-
-
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("exemplo-jpa");
         EntityManager em = emf.createEntityManager();
 
@@ -23,6 +21,5 @@ public class Program {
         System.out.println("Pronto!");
         em.close();
         emf.close();
-
     }
 }
